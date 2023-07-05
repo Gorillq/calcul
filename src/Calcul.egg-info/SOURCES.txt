@@ -1,0 +1,8 @@
+license.txt
+pyproject.toml
+src/__init__.py
+src/calcul.py
+src/Calcul.egg-info/PKG-INFO
+src/Calcul.egg-info/SOURCES.txt
+src/Calcul.egg-info/dependency_links.txt
+src/Calcul.egg-info/top_level.txt
