@@ -46,22 +46,22 @@ class Complex:
     def divi(self):
         return self.d / self.e
     
-# class Cmplx:
-#     def __init__(self,j):
-#         self.j = j
-#     def biegun(self):
-#         cm1 = cmath.polar(self.j)
-#         return cm1
-#     def tryg(self):
-#         cm2 = cmath.rect(self.j)
-#         return cm2
-#     def argz(self):
-#         cm3 = cmath.phase(self.j)
-#         return cm3
-#     def absolute(self):
-#         abss = abs(self.j)
-#         return abss
-    
+class Cmplx:
+    def __init__(self,j ,k):
+        self.j = j
+        self.k = k
+    def biegun(self):
+        cm1 = cmath.polar(self.j, k)
+        return cm1
+    def tryg(self):
+        cm2 = cmath.rect(self.j, k)
+        return cm2
+    def argz(self):
+        cm3 = cmath.phase(self.j, k)
+        return cm3
+    def absolute(self):
+        abss = abs(self.j, k)
+        return abss
 def menu():
     print("""Działania na liczbach zespolonych:
 1.Dodawanie liczb zespolonych
@@ -88,6 +88,10 @@ while True:
     # if men is not int:
     #     xx = 0
     #     print(xx)
+    NULL = ''
+    if men == NULL or men >  9:
+        print("Fatal Error")
+        exit()
     if int(men) < 5 :
         a = input("Podaj pierwsza liczbe: \n")
         b = input("Podaj druga liczbe \n")
@@ -106,6 +110,10 @@ while True:
             pass
     else:
         pass
+
+    if int(men) > 9 or NULL:
+        print("Fatal Error")
+        exit()
     
     if int(men) >= 5 and int(men) < 7:
         c = input("Podaj liczbe pod pierwiastkiem: \n")
@@ -155,7 +163,5 @@ while True:
      
     if int(men) == 9:
         exit()
-        
-    if int(men) > 9:
-        print("Fatal Error")
+
     
