@@ -89,7 +89,7 @@ while True:
     #     xx = 0
     #     print(xx)
     NULL = ''
-    if men == NULL or men >  9:
+    if men == NULL or int(men) >  9:
         print("Fatal Error")
         exit()
     if int(men) < 5 :
